@@ -16,7 +16,7 @@
 import React, { lazy, Suspense } from 'react';
 import { createBrowserHistory } from 'history';
 import { Router as BaseRouter, Switch, Route } from 'react-router-dom';
-import Koji from 'koji-tools';
+import Koji from '@withkoji/vcc';
 
 // Router
 const history = createBrowserHistory();

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import Koji from 'koji-tools';
+import Koji from '@withkoji/vcc';
 
 const Container = styled.div`
     background-color: ${() => Koji.config.colors.backgroundColor};
