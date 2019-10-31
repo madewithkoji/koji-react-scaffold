@@ -20,7 +20,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Router from './Router';
-import Koji from 'koji-tools';
+import Koji from '@withkoji/vcc';
 
 const Container = styled.div`
     padding: 0;
@@ -28,10 +28,6 @@ const Container = styled.div`
 `;
 
 class App extends React.PureComponent {
-  componentWillMount() {
-    Koji.pageLoad();
-  }
-
   render() {
     return (
       <Container>

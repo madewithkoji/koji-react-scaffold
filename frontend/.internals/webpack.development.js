@@ -99,7 +99,7 @@ module.exports = {
                 optimizationLevel: 7,
               },
               pngquant: {
-                quality: [0.65, 0.90]',
+                quality: [0.65, 0.90],
                 speed: 4,
               },
             },
@@ -128,6 +128,7 @@ module.exports = {
     disableHostCheck: true,
     historyApiFallback: true,
     overlay: true,
+    public: process.env.KOJI_SERVICE_URL_frontend
   },
   plugins: [
     new webpack.DefinePlugin({
