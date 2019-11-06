@@ -32,3 +32,15 @@ render(App);
 if (module.hot) {
     module.hot.accept('./App', () => { render(App) });
 }
+
+
+// Add a <link> to the custom font in the <head> of index.html
+ 
+import Koji from '@withkoji/vcc';
+(function addCustomFont(){
+  const link = document.createElement('link');
+  link.setAttribute('rel', 'stylesheet');
+  link.setAttribute('type', 'text/css');
+  link.setAttribute('href', Koji.config.strings.fontFamily);
+  document.head.appendChild(link);
+})();

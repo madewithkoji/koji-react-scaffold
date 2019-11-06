@@ -1,7 +1,8 @@
 {
   "strings": {
     "content": "Welcome to your Koji React App",
-    "linkText": "Learn React"
+    "linkText": "Learn React",
+    "fontFamily": "https://fonts.googleapis.com/css?family=Roboto"
   },
   "@@editor": [
     {
@@ -19,6 +20,12 @@
         {
           "key": "linkText",
           "name": "Link Text",
+          "type": "text"
+        },
+        {
+          "key": "fontFamily",
+          "name": "Font Family",          
+          "description": "Link to custom font (see https://fonts.google.com/)",
           "type": "text"
         }
       ]

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import Koji from 'koji-tools';
+import Koji from '@withkoji/vcc';
 
 const Container = styled.div`
     background-color: ${() => Koji.config.colors.backgroundColor};
@@ -43,15 +43,6 @@ const Icon = styled.div`
 `;
 
 class HomePage extends React.Component {
-    componentDidMount() {
-        // Force an update of the dom on prop changes
-        // This is just for development situations so
-        // that we can test prop changes in real-time.
-        Koji.on('change', () => {
-            this.forceUpdate();
-        })
-    }
-
     render() {
         return (
             <Container>
